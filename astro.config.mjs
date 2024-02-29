@@ -11,6 +11,7 @@ export default defineConfig({
       },
       social: {
         github: "https://github.com/simmons-tech",
+        email: "mailto:simmons-tech@mit.edu",
       },
       editLink: {
         baseUrl:
