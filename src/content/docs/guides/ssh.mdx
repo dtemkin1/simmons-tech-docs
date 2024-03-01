@@ -1,0 +1,29 @@
+---
+title: SSHing into root@simmons.mit.edu
+sidebar:
+  label: SSH into Server
+  order: 1
+---
+
+import { Aside } from "@astrojs/starlight/components";
+
+First, SSH into your personal Athena dialup thing
+
+```bash
+ssh <KERB>@athena.dialup.mit.edu
+```
+
+<Aside>The password is your kerb password</Aside>
+
+In your personal Athena dialup thing, SSH into `root@simmons.mit.edu`
+
+```bash
+ssh root@simmons.mit.edu
+```
+
+<Aside>
+  If it's your first time, enter the password at the top of the Simmons Tech
+  Passwords spreadsheet
+</Aside>
+
+To avoid typing in the password in future, add your kerb to the file `/root/.k5login`. Add both `<KERB>@ATHENA.MIT.EDU` and `<KERB>/root@ATHENA.MIT.EDU`.

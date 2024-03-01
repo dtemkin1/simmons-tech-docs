@@ -18,19 +18,20 @@ export default defineConfig({
           "https://github.com/dtemkin1/simmons-tech-docs/edit/main/docs/",
       },
       sidebar: [
+        { label: "Intro to Simmons Tech", link: "/intro/" },
+        { label: "Simmons Tech Transition", link: "/transition/" },
         {
-          label: "Guides",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: "Example Guide", link: "/guides/example/" },
-          ],
+          label: "How to do stuff",
+          autogenerate: { directory: "guides" },
         },
         {
-          label: "Reference",
+          label: "How does Simmons Tech work?",
           autogenerate: { directory: "reference" },
         },
       ],
       customCss: ["./src/styles/custom.css"],
     }),
   ],
+  site: "https://dtemkin1.github.io",
+  base: "/simmons-tech-docs",
 });
