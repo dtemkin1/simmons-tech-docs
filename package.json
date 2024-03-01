@@ -1,5 +1,5 @@
 {
-  "name": "interstellar-iron",
+  "name": "simmons-tech-docs",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,10 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.20.1",
-    "astro": "^4.3.5",
-    "sharp": "^0.32.5",
     "@astrojs/check": "^0.5.6",
+    "@astrojs/starlight": "^0.21.0",
+    "astro": "^4.4.8",
+    "sharp": "^0.32.5",
     "typescript": "^5.3.3"
   }
 }
