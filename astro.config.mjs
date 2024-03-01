@@ -30,6 +30,7 @@ export default defineConfig({
         },
       ],
       customCss: ["./src/styles/custom.css"],
+      favicon: "/favicon.png",
     }),
   ],
   site: "https://dtemkin1.github.io",
