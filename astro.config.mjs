@@ -34,4 +34,5 @@ export default defineConfig({
   ],
   site: "https://dtemkin1.github.io",
   base: "/simmons-tech-docs",
+  trailingSlash: "always",
 });
