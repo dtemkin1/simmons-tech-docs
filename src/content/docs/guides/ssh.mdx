@@ -5,25 +5,22 @@ sidebar:
   order: 1
 ---
 
-import { Aside } from "@astrojs/starlight/components";
+import { Steps } from "@astrojs/starlight/components";
 
-First, SSH into your personal Athena dialup thing
+<Steps>
 
-```bash
-ssh <KERB>@athena.dialup.mit.edu
-```
+1.  First, SSH into your personal Athena dialup thing. The password is your kerb password
 
-<Aside>The password is your kerb password</Aside>
+    ```sh
+    ssh <KERB>@athena.dialup.mit.edu
+    ```
 
-In your personal Athena dialup thing, SSH into `root@simmons.mit.edu`
+2.  In your personal Athena dialup thing, SSH into `root@simmons.mit.edu`. If it's your first time, enter the password at the top of the Simmons Tech Passwords spreadsheet.
 
-```bash
-ssh root@simmons.mit.edu
-```
+    ```sh
+    ssh root@simmons.mit.edu
+    ```
 
-<Aside>
-  If it's your first time, enter the password at the top of the Simmons Tech
-  Passwords spreadsheet
-</Aside>
+3.  To avoid typing in the password in future, add your kerb to the file `/root/.k5login`. Add both `<KERB>@ATHENA.MIT.EDU` and `<KERB>/root@ATHENA.MIT.EDU`.
 
-To avoid typing in the password in future, add your kerb to the file `/root/.k5login`. Add both `<KERB>@ATHENA.MIT.EDU` and `<KERB>/root@ATHENA.MIT.EDU`.
+</Steps>
