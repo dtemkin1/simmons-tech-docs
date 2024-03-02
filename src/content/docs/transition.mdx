@@ -133,7 +133,7 @@ vif = ['bridge=xenbr0, mac=00:16:3e:ff:ff:10']
 ### Fix Officers Mailing list
 
 - Broken SSL
-- https://simmons.mit.edu/mailman/admindb/LIST_NAME
+- `simmons.mit.edu/mailman/admindb/LIST_NAME`
 - Click admin interface link on any mailing list
 - Click Membership management / mass subscription to add all new frosh
 
@@ -371,10 +371,14 @@ When picking up packages for old users:
 
 - backup system
   - Commands to check filesystems: `fdisk -l`
-  - following the RedHat guide: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/storage_administration_guide/ext4backup
   - Ran e2fsck `/dev/device`
   - Generated a sosreport (by running `sosreport` and filling out prompted info)
 - Rebooted the system, fixed the issue
+
+<LinkCard
+  title="RedHat Guide for File System Backup"
+  href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/storage_administration_guide/ext4backup"
+/>
 
 ## Resetting Lounge Proposals
 
@@ -387,7 +391,11 @@ When picking up packages for old users:
 - To poke at ip addresses: `qy -s ghbd W79-PUBLIC \*`
   - `ghbd` = get host by address
 - **METAL-GEAR IP ADDRESS**: `METAL-GEAR-MGMT.MIT.EDU` `18.18.96.17`
-- Debian installers: http://mirrors.mit.edu/debian/dists/buster/main/installer-amd64/current/images/netboot/
+
+<LinkCard
+  title="Debian installers"
+  href="http://mirrors.mit.edu/debian/dists/buster/main/installer-amd64/current/images/netboot/"
+/>
 
 ## Jordan's Notes (20-21 Tech Chair)
 
