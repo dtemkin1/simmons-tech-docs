@@ -12,8 +12,8 @@ importers:
         specifier: ^0.9.4
         version: 0.9.4(typescript@5.8.3)
       '@astrojs/starlight':
-        specifier: ^0.32.5
-        version: 0.32.5(astro@5.5.6(jiti@2.4.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.5.0))
+        specifier: ^0.33.0
+        version: 0.33.0(astro@5.5.6(jiti@2.4.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.5.0))
       astro:
         specifier: ^5.5.6
         version: 5.5.6(jiti@2.4.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.5.0)
@@ -69,8 +69,8 @@ packages:
   '@astrojs/sitemap@3.3.0':
     resolution: {integrity: sha512-nYE4lKQtk+Kbrw/w0G0TTgT724co0jUsU4tPlHY9au5HmTBKbwiCLwO/15b1/y13aZ4Kr9ZbMeMHlXuwn0ty4Q==}
 
-  '@astrojs/starlight@0.32.5':
-    resolution: {integrity: sha512-KYZsYbA5eEAsCO3XNc6DWDPml1JCD6GVusuB15fYq5dbxyB7RtC6kgwbtiEmr84maIjcQUmDtFJCz3sN4CdaSg==}
+  '@astrojs/starlight@0.33.0':
+    resolution: {integrity: sha512-BAdz3TJ5f7e0iDwu7ZNy6i6Rlca2sgi416K8pGPN3VMIlgJmj9NCqSUGZh+OQhk5FNzmnssi8w+xQQeNpe5hDw==}
     peerDependencies:
       astro: ^5.1.5
 
@@ -1570,6 +1570,9 @@ packages:
   remark-rehype@11.1.1:
     resolution: {integrity: sha512-g/osARvjkBXb6Wo0XvAeXQohVta8i84ACbenPpoSsxTOQH/Ae0/RGP4WZgnMH5pMLpsj4FG7OHmcIcXxpza8eQ==}
 
+  remark-rehype@11.1.2:
+    resolution: {integrity: sha512-Dh7l57ianaEoIpzbp0PC9UKAdCSVklD8E5Rpw7ETfbTl3FqcOOgq5q2LVDhgGCkaBv7p24JXikPdvhhmHvKMsw==}
+
   remark-smartypants@3.0.2:
     resolution: {integrity: sha512-ILTWeOriIluwEvPjv67v7Blgrcx+LZOkAUVtKI3putuhlZm84FnqDORNXPPm+HY3NdZOMhyDwZ1E+eZB/Df5dA==}
     engines: {node: '>=16.0.0'}
@@ -2180,7 +2183,7 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.24.2
 
-  '@astrojs/starlight@0.32.5(astro@5.5.6(jiti@2.4.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.5.0))':
+  '@astrojs/starlight@0.33.0(astro@5.5.6(jiti@2.4.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.5.0))':
     dependencies:
       '@astrojs/mdx': 4.2.3(astro@5.5.6(jiti@2.4.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.5.0))
       '@astrojs/sitemap': 3.3.0
@@ -2470,7 +2473,7 @@ snapshots:
       rehype-recma: 1.0.0
       remark-mdx: 3.1.0
       remark-parse: 11.0.0
-      remark-rehype: 11.1.1
+      remark-rehype: 11.1.2
       source-map: 0.7.4
       unified: 11.0.5
       unist-util-position-from-estree: 2.0.0
@@ -4179,6 +4182,14 @@ snapshots:
       - supports-color
 
   remark-rehype@11.1.1:
+    dependencies:
+      '@types/hast': 3.0.4
+      '@types/mdast': 4.0.4
+      mdast-util-to-hast: 13.2.0
+      unified: 11.0.5
+      vfile: 6.0.3
+
+  remark-rehype@11.1.2:
     dependencies:
       '@types/hast': 3.0.4
       '@types/mdast': 4.0.4
