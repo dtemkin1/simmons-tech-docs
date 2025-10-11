@@ -9,10 +9,10 @@ export default defineConfig({
       logo: {
         src: "./src/assets/simmons-logo.png",
       },
-      social: {
-        github: "https://github.com/simmons-tech",
-        email: "mailto:simmons-tech@mit.edu",
-      },
+      social: [
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/simmons-tech' },
+        { icon: 'email', label: 'Email', href: 'https://astro.build/chat' },
+      ],
       editLink: {
         baseUrl:
           "https://github.com/dtemkin1/simmons-tech-docs/edit/main/docs/",
