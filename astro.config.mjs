@@ -15,7 +15,7 @@ export default defineConfig({
       ],
       editLink: {
         baseUrl:
-          "https://github.com/dtemkin1/simmons-tech-docs/edit/main/docs/",
+          "https://github.com/simmons-tech/docs/edit/main/docs/",
       },
       sidebar: [
         { label: "Intro to Simmons Tech", link: "/intro/" },
@@ -33,7 +33,7 @@ export default defineConfig({
       favicon: "/favicon.png",
     }),
   ],
-  site: "https://dtemkin1.github.io",
-  base: "/simmons-tech-docs",
+  site: "https://simmons-tech.github.io",
+  base: "/docs",
   trailingSlash: "always",
 });
